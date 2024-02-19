@@ -18,9 +18,6 @@
 
 body{
     background-color: var(--mainBgColor);  
-    border: 50px; 
-    border-style: solid;
-    border-color: lightcoral;  
 }
 
 p, span, li{
@@ -105,6 +102,12 @@ li{
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.9em;
+}
+
+.main-body{
+    border: 50px; 
+    border-style: solid;
+    border-color: lightcoral;  
 }
 
 .card--techstack{
