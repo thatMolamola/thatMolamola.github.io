@@ -84,6 +84,7 @@ li{
     color: var(--secondaryTextColor);
     font-size: 0.9em;
     transition: 0.3s;
+    text-decoration: underline;
 }
 
 #socials--list a:hover{
@@ -117,6 +118,14 @@ li{
     align-items: center;
 }
 
+.return-button{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    position: absolute;
+    left: 5em;
+}
+
 .card--project{
     padding-top: 1em;
     padding-bottom: 1em;
@@ -135,7 +144,8 @@ li{
 }
 
 .collapsible {
-    background-color: #777;
+    background-color: #555;
+    
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -147,7 +157,7 @@ li{
   }
   
   .active, .collapsible:hover {
-    background-color: #555;
+    background-color: lightcoral;
   }
   
   .collapsible:after {

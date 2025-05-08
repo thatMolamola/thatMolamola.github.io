@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Joaquin IFN Written Works</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+
+
+
+    <body class="main-body" >
+      <div id="container--main">
+      
+      <a href="index.html" class="return-button">&#x2190;</a>
+
+      <h1>Resume</h1>
+
+      <a href="./assets/joaquinIFN_resume.pdf" download="">Download PDF Resume</a>
+      <div class="content">
+        <p></p>
+      </div>
+        
+      <section class="section--page">
+        <h2>Technical skills</h2>
+    
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>Unity</span></div>
+            <div class="card--techstack"><span>C#, Python, JavaScript</span></div>
+            <div class="card--techstack"><span>React, Firebase</span></div>
+        </div>
+    </section>
+
+
+    <section class="section--page">
+        <h2>Soft skills</h2>
+    
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>Spanish Fluency</span></div>
+            <div class="card--techstack"><span>Customer Service, Organizational Skills</span></div>
+            <div class="card--techstack"><span>Emotional Intelligence</span></div>
+        </div>
+    </section>
+
+
+    <section id="work-history-wrapper" class="section--page">
+        <h2>Game Project History</h2>
+        <div class="line-break"></div>
+        <div class="card--work-history">
+            <strong>SEVEN SEGMENTS Developer | ThatMolamolaGames </strong>
+            <p>11/2024 - 05/2025</p>
+            <p>Sole developer behind Seven Segments, an turn-based strategy game centering around the aesthetics of Seven Segment Displays, challenging players against one another in a game of wits.</p>
+            <ul>
+                <li>Created dozens of pixelart spritesheets for a variety of game modes, game objects and UI. Made with Piskel. </li>
+                <li>Developed a robust abstract game mode script, allowing me to easily build upon the abstract foundation and add new modes to the game.</li>
+            </ul>
+        </div>
+
+        <div class="line-break"></div>
+    
+        <div class="line-break"></div>
+        <div class="card--work-history">
+            <strong>MATHEMAGICA Developer | ThatMolamolaGames </strong>
+            <p>12/2023 - 09/2024</p>
+            <p>Sole developer behind Mathemagica, an turn-based RPG centering around the aesthetics of magic and the power of math, pushing the typical mathematical boundaries of RPGs, encouraging players to explore more deeply.</p>
+            <ul>
+                <li>Created over 30 animated pixelart spritesheets for a variety of characters and enemies, with additional sprites made for UI and backgrounds. Made with Piskel. </li>
+                <li>Developed a robust turn-based battle system for a variable number of player controlled characters and enemies to confront</li>
+                <li>Learned how to use Scriptable Objects as data containers. Implemented 8 unique Scriptable Objects to preserve data between battles, scenes, and games.</li>
+            </ul>
+        </div>
+
+        <div class="line-break"></div>
+
+    
+        <div class="card--work-history">
+            <strong>S-CARGO Developer | ThatMolamolaGames </strong>
+            <p>11/2021 - 11/2022</p>
+            <p>Developed S-Cargo, a speed-focused 2D-platformer themed around snails navigating through levels to deliver mail</p>
+            <ul>
+                <li>Created over 35 animated pixelart spritesheets for characters and enemies, with additional pixelart sprites for UI, created using Piskel. </li>
+                <li>Developed a complex binary movement system with distinct capabilities, such that players have an interesting toolkit to navigate and complete levels quickly.</li>
+                <li>Learned how to effectively use a Singleton, providing quick access to the most relevant data regardless of scene or level.</li>
+            </ul>
+        </div>
+    
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+            <strong>CALORIC INTENSITY Developer | Class Project </strong>
+            <p>11/2021 - 12/2021</p>
+            <p>One of four developers of Caloric Intensity, a food-themed First Person Shooter where players have to deliver food quickly to customers by using burger blasters and sausage shooters</p>
+            <ul>
+                <li>Created a distinctive toon shader to give the game a more whimsical and cartoony appearance</li>
+                <li>Worked with other novice developers on developing animations, sprites, music and scripts for the game, contributing to every aspect of the game.</li>
+            </ul>
+        </div>
+    
+        <div class="line-break"></div>
+        
+
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+        </div>
+        </body>
+</html>
