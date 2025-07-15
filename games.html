@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>thatMolamola Games</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    
+    <body class="main-body" >
+      <div id="container--main">
+        <a href="index.html" class="return-button">&#x2190;</a>
+
+        <h2>thatMolamola Games</h2>
+        
+        <p>As a game developer, I strive to create experiences that are uniquely my own. Currently, my individual projects 
+          all exist within the scope of Unity, C# and 2D pixelart, but I'm always pushing my boundaries and exploring new 
+          ways I can create games I feel passionate about. 
+        </p>
+
+        
+
+        <button class="collapsible">Seven Segments</button>
+        <div class="poetry-content">
+        <p>
+          Seven Segments is the first officially published game by thatMolamola Games, and it is a puzzle strategy game themed around Seven Segment Displays. With three multiplayer modes and a single player campaign, the core basis of the game centers on illuminating segments in order to claim digits on a Seven Segment Display. 
+        </p>
+
+        <img id="ss" src="./assets/images/Ss1.png" width = "500">
+        <img id="ss" src="./assets/images/Ss2.png" width = "500">
+        <img id="ss" src="./assets/images/Ss3.png" width = "500">
+        </div>
+
+        <button class="collapsible">Mathemagica</button>
+        <div class="poetry-content">
+          <p>
+            Mathemagica is a game protoype, similarly math themed as Seven Segments, but with a more narratively driven world. It heavily draws from RPG elements while advancing those elements in new ways, primarily by allowing the player to control their damage output via in-battle spellcrafting, in addition to battles involving imaginary HP values, forcing the player to defeat their opponents by dropping HP values to exactly zero. 
+          </p>
+          <img id="ss" src="./assets/images/SS4.png" width = "500">
+          <img id="ss" src="./assets/images/SS5.png" width = "500">
+          <img id="ss" src="./assets/images/SS6.png" width = "500">
+          <img id="ss" src="./assets/images/SS7.png" width = "500">
+        </div>
+
+        <button class="collapsible">S-Cargo</button>
+        <div class="poetry-content">
+          <p>
+            S-Cargo was thatMolamola's first game prototype, a speedrunner platformer game themed around snails delivering mail. 
+          </p>
+          <img id="ss" src="./assets/images/SS8.png" width = "500">
+          <img id="ss" src="./assets/images/SS9.png" width = "500">
+          <img id="ss" src="./assets/images/SS10.png" width = "500">
+        </div>
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+        </div>
+        </body>
+</html>
